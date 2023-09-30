@@ -1,11 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+.carosoulecontent {
+    position: absolute !important;
+    bottom: 200px !important;
+    z-index: 1000;
+}
+
 .im1 {
-    width: 220px;
+    width: 12rem;
     height: auto;
 
 }
@@ -19,11 +27,91 @@
     font-size: 18px !important;
     padding: 15px 25px !important;
     font-family: "Work Sans" !important;
-    position: relative;
+
     font-weight: 500 !important;
     text-transform: uppercase !important;
 }
 
+#home {
+    position: relative;
+
+
+}
+
+#home::before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    top: 70%;
+
+    background: #fff;
+}
+
+#home2 {
+    position: relative;
+}
+
+#home2:hover::before {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    width: 70%;
+    height: 1px;
+    top: 70%;
+
+    background: #fff;
+}
+
+#home:hover::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    top: 70%;
+
+    background: #fff;
+}
+
+#home::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 1px;
+    top: 48%;
+    left: 4.5rem;
+    /* right: -7px; */
+    background: #fff;
+    transform: rotate(91deg);
+}
+
+#home3 {
+    position: relative;
+}
+
+#home3::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 1px;
+    top: 48%;
+    left: 0.5rem;
+    /* right: -7px; */
+    background: #fff;
+    transform: rotate(91deg);
+}
+
+#home2::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 7px !important;
+    height: 1px !important;
+    top: 48% !important;
+    left: 23px !important;
+    background: #fff !important;
+    transform: rotate(91deg) !important;
+}
 
 
 .nav-links2 {
@@ -35,20 +123,7 @@
 
 }
 
-.nav-links::after {
-    content: "";
-    /* width: 13px; */
-    height: 8px;
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    transform: translate(2px, 4px);
-    border: transparent;
-    border-right: solid 2px #ffff;
-
-
-
-}
+.nav-links::after {}
 
 .ul-links {
     gap: 10px;
@@ -56,22 +131,50 @@
     flex-direction: column;
     justify-content: start;
     /* align-items: start; */
-    text-align: center;
+
+    list-style: none;
 
 }
+
+.ul-links-mobile {
+    list-style: none;
+    text-align: center;
+
+
+
+}
+
+.ul-links-mobile li a {
+    color: #ffff;
+    font-family: "Work Sans";
+    font-size: 16px;
+
+}
+
+
+.mobile {
+    background-color: #000000;
+    /* justify-content: center; */
+    align-items: center;
+    /* display: flex; */
+
+    width: 100%;
+}
+
 
 .ul-links li a {
     color: #ffff;
     font-family: "Work Sans";
+    font-size: 16px;
 
 }
 
 .cara-image {
     background-size: cover !important;
-
+    object-fit: cover !important;
     width: 100%;
     height: 100vh !important;
-    background-position: 50% !important;
+
 
 }
 
@@ -96,6 +199,19 @@
     background-color: #fff !important;
     border-color: #FFFFFF !important;
 
+}
+
+.gradient-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    /* Adjust the gradient colors and opacity here */
+    z-index: 1;
+    opacity: .9;
 }
 
 .learn-more {
@@ -143,6 +259,7 @@
 .menu-1 {
     background: #18A1AB !important;
     padding: 10px 15px !important;
+    top: 63% !important;
 
 }
 
@@ -166,5 +283,33 @@
 
     .carasol-paras {
         font-size: 30px;
+    }
+}
+
+@media (max-width:992px) {
+    #home::after {
+        display: none;
+
+    }
+
+    #home::before {
+        display: none;
+    }
+
+    #home2::after {
+        display: none;
+    }
+
+    #home2:hover::before {
+        display: none;
+    }
+
+    .carosoulecontent {
+        position: absolute !important;
+        bottom: 100px !important;
+    }
+
+    #home3::after {
+        display: none;
     }
 }
