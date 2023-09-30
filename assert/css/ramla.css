@@ -1,0 +1,89 @@
+
+.dr-name{
+    font-size: 37px;
+    font-weight: 300;
+    color: black;
+}
+.button-practice
+{
+    border: 1px #18A1AB;
+    border-radius: 5px;
+    background: #18A1AB;
+    color: white;
+}
+.book-button button{
+    border: 1px solid #848484;
+    /* border: 1px #70757A; */
+    border-radius: 50%;
+    background: white;
+    font-size: 15px;
+}
+.dr-height img{
+    object-fit:fill;
+    height: 500px !important;
+}
+.our-team{
+    font-weight:400;
+}
+.btn-custom:hover {
+    background-color:#333437; /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover */
+  }
+  .star{
+    font-size: 30px !important;
+    color: #F7B603;
+    font-weight: 400;
+  }
+  .star-image img{
+    width: 30px !important;
+  }
+  .reviews{
+    color: #70757A;
+    font-size: 16px;
+  }
+
+  @keyframes scaleOnce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Scale up to 1.2x size */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .star-image img {
+    animation: scaleOnce 1s ease-in-out; /* Adjust duration and timing as needed */
+  }
+
+
+  .hidden-content {
+    display: none;
+}
+.card-image-border img{
+    width: 40px;
+    border: 3px #848484;
+    border-radius: 50%;
+}
+
+.star-image-sundi img{
+    width: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .dr-name{
+        font-size: 30px;
+        text-align: center;
+    }
+    .para, .book-button{
+        text-align: center;
+    }        
+    .image-dr img{
+        width: 100% !important;
+    }
+    .margin-bottom{
+        margin-bottom: 30px !important;
+    }
+}
