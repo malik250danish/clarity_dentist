@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ans-serif:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-footer{
+    background-color: #f5f5f5;
+    flex-wrap: wrap;
+}
+#Main-image{
+    width: 300px !important;
+    cursor: pointer;
+}
+.footer-head{
+ font-family: var(--e-global-typography-secondary-font-family),Sans-serif;
+ font-weight: 9;
+ color: black;
+}
+.footer-text{
+    font-family: var(--e-global-typography-secondary-font-family),Sans-serif;
+    color: #292929cc;
+    font-size: 18px;
+}
+.main-footer ul li{
+    list-style: none;
+}
+.main-footer ul li a{
+    text-decoration: none;
+}
+.footer-list a{
+    color:  #c36;
+}
+.footer-list a:hover{
+    color: rgb(39, 38, 38);
+}
+
+/*---@media--*/
+@media (max-width:1250px) {
+    #Main-image{
+        width: 200px !important;
+    }
+    .footer-iframe{
+        width: 250px;
+    }
+    
+}
+@media (max-width:700px) {
+    .footer-head{
+        padding-left: 0px !important;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .footer-iframe{
+        width: 100%;
+        height: auto;
+    }
+    
+
+}
